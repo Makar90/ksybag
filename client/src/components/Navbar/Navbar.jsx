@@ -19,8 +19,16 @@ const Navbar = () =>{
                     <div className='item'>
                         <Link to="/products/1">Woomen</Link>
                     </div>
+                    <div className='item'>
+                        <Link to="/products/2">Man</Link>
+                    </div>
+                    <div className='item'>
+                        <Link to="/products/3">Children</Link>
+                    </div>
                 </div>
-                <div className="center"></div>
+                <div className="center">
+                    <Link to="/">LAMASTORE</Link>
+                </div>
                 <div className="right"></div>
             </div>
         </div>
