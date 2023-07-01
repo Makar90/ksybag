@@ -1,5 +1,6 @@
 import {
-    createBrowserRouter,
+    //createBrowserRouter,
+    createHashRouter,
     Outlet,
     RouterProvider,
     //Routes,
@@ -29,7 +30,28 @@ const Layout = () => {
 }
 
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Layout />,
+        children: [
+            {
+                path: "/",
+                element: <Home />
+            },
+            {
+                path: "/products/:id",
+                element: <Products />
+            },
+            {
+                path: "/product/:id",
+                element: <Product />
+            },
+        ]
+    },
+]); */
+
+const router = createHashRouter([
     {
         path: "/",
         element: <Layout />,
@@ -54,7 +76,7 @@ function App() {
 
     return (
         <div className="App">
-            <RouterProvider basename="/" router={router} />
+            <RouterProvider router={router} />
         </div>
     );
 }
