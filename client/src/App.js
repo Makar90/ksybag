@@ -2,22 +2,25 @@ import {
     createBrowserRouter,
     Outlet,
     RouterProvider,
+    //Routes,
+    //Route
 } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Products from "./pages/Product/Product";
 import Product from "./pages/Products/Products";
 
-import Header from "./components/Header/Header";
+//import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
+//import './components/Navbar/index.scss';
 
 
 const Layout = () => {
     return (
         <div className="app">
-            <Header />
+            {/* <Header /> */}
             <Navbar />
             <Outlet />
             <Footer />
