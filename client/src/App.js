@@ -3,8 +3,6 @@ import {
     createHashRouter,
     Outlet,
     RouterProvider,
-    //Routes,
-    //Route
 } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
@@ -15,7 +13,7 @@ import Product from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
-//import './components/Navbar/index.scss';
+import './app.scss';
 
 
 const Layout = () => {
