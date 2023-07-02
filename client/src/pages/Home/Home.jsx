@@ -1,9 +1,16 @@
+import Categories from "../../components/Categories/Categories.jsx";
+import Contact from "../../components/Contact/Contact.jsx";
+import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts.jsx";
 import Slider from "../../components/Slider/Slider.jsx";
 
 const Home = () =>{
     return(
         <div className="home">
-            <Slider/>    
+            <Slider/> 
+            <FeaturedProducts type="featured"/>   
+            <Categories/>
+            <FeaturedProducts type="tremding"/> 
+            <Contact/>
         </div>
     )
 }
