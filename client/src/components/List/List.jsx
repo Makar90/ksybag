@@ -19,6 +19,7 @@ const List = ({subCats, catId, maxPrice, sort}) =>{
                 : data?.map((item) => <Card item={item} key={item.id}/>)}
         </div>
     )
+    
 }
 
 export default List;
