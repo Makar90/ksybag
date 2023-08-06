@@ -1,5 +1,5 @@
 import './List.scss';
-import {ProductsData} from '../../data/ProductsData.jsx';
+//import {ProductsData} from '../../data/ProductsData.jsx';
 import Card from '../Card/Card.jsx';
 import useFetch from '../../hooks/useFetch';
 
@@ -11,6 +11,8 @@ const List = ({subCats, catId, maxPrice, sort}) =>{
         )}&[filters][price][$lte]=${maxPrice}&sort=price:${sort}`
     );
     //console.log(data);
+    //console.log(loading);
+    console.log(error);
 
     return(
         <div className='list'>
@@ -19,7 +21,7 @@ const List = ({subCats, catId, maxPrice, sort}) =>{
                 : data?.map((item) => <Card item={item} key={item.id}/>)}
         </div>
     )
-    
+
 }
 
 export default List;

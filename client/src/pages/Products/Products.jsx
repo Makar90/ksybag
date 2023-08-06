@@ -16,6 +16,8 @@ const Products = () =>{
     
     const {data, loading, error} = useFetch (`/sub-categories?[filters][categories][id][$eq]=${catId}`);
     //console.log(data);
+    console.log(loading);
+    console.log(error);
 
     const handleChange = (e) => {
         const value = e.target.value;
